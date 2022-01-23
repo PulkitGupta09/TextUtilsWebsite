@@ -1,4 +1,3 @@
-# I have created this file - Pulkit
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -13,8 +12,6 @@ def analyze(request):
     newlineremover = request.POST.get('newlineremover', 'off')
     capitalization = request.POST.get('capitalization', 'off')
     extraspaceremover = request.POST.get('extraspaceremover', 'off')
-    print(removepunc)
-    print(djtext)
     totalword = djtext
     if removepunc == 'on':
         punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
